@@ -1783,12 +1783,8 @@ public class Grid extends XYControl {
 	}
 
 	void fire() {
-		/*
-		 * inventoryTimer--; inventoryTrigger(2); //cookManager(false,false); if
-		 * (cooking == false) { standardBlock("bonfire.png",13,100,3); } else {
-		 * standardBlock2("bonfire1.png", "bonfire2.png", 40, -1,100,3);
-		 * light(_x,_y,BLOCKSIZE,BLOCKSIZE,30,200); }
-		 */
+		standardBlock2("bonfire1.png", "bonfire2.png", 40, -1,100,3);
+		light(_x,_y,BLOCKSIZE,BLOCKSIZE,30,200);
 		inventoryCreator(13, Arrays.asList(9), Arrays.asList(6, 16),
 				Arrays.asList(14), 3, "bonfire.png", "bonfire1.png",
 				"bonfire2.png", false, true, false, false, 500, 0, 0, 0, 0);

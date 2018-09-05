@@ -195,15 +195,12 @@ public class MyGdxGame extends ApplicationAdapter implements ApplicationListener
 				for (int i = 0; i < gridStack.size(); i++) {
 					gridStack.get(i).drawRect();
 				}
+				dc.directionOn(Protagonist._x,Protagonist._y, Protagonist.WIDTH, Protagonist.HEIGHT + 10);
+				dc.directionYOn(Protagonist._x,Protagonist._y, Protagonist.WIDTH, Protagonist.HEIGHT + 10);
 				itemDropManager();
 				chickenManager();
 				for (int i = 0; i < projectile.size(); i++) {
 					projectile.get(i).draw();
-				}
-				if(display)
-				{
-					dc.directionOn(Protagonist._x,Protagonist._y, Protagonist.WIDTH, Protagonist.HEIGHT + 10);
-					dc.directionYOn(Protagonist._x,Protagonist._y, Protagonist.WIDTH, Protagonist.HEIGHT + 10);
 				}
 				
 				if (load)
@@ -235,15 +232,6 @@ public class MyGdxGame extends ApplicationAdapter implements ApplicationListener
 			sr.rect(850 , 100, timer, 40);
 			sr.end();		
 		}	
-		if(MyGdxGame.display)
-		{
-			dc.directionOn(Protagonist._x,Protagonist._y, Protagonist.WIDTH, Protagonist.HEIGHT + 10);
-			dc.directionYOn(Protagonist._x,Protagonist._y, Protagonist.WIDTH, Protagonist.HEIGHT + 10);
-		}
-		if(newG && display == false)
-		{
-			dc.directionYOn(Protagonist._x,Protagonist._y, Protagonist.WIDTH, Protagonist.HEIGHT + 10);
-		}
 		if(MyGdxGame.display)
 		{
 			lightSystem.draw();

@@ -639,8 +639,8 @@ public class Chicken {
 		{
 			headAngleManager();
 		}
-			x -= MyGdxGame.dc.speed() - dx;
-			y -= MyGdxGame.dc.dy2 - dy;	
+			x -= MyGdxGame.dc.realSpeed - dx;
+			y -= MyGdxGame.dc.dy() - dy;
 	}
 
 }

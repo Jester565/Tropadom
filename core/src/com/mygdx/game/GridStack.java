@@ -407,7 +407,7 @@ int rainID()
 	{
 		if(Grids.get(i-1)._type != 0)
 		{
-		if (Grids.size() > i && i > 0 && Grids.get(i-1).block != 0||Grids.get(i-1)._type == 8||Grids.get(i)._type == 51||Grids.get(i)._type==52||Grids.get(i)._type==53)
+		if (Grids.size() > i && i > 0 && (Grids.get(i-1).block != 0 ||Grids.get(i-1)._type == 8||Grids.get(i)._type == 51||Grids.get(i)._type==52||Grids.get(i)._type==53))
 		{
 			if(Grids.get(i-1)._y != 2126)
 			{
